@@ -13,8 +13,9 @@
   /* grid-template-rows: repeat(3, 1fr); */
   grid-template-areas:
     "header header header header header header header header header header header header"
-    "brief brief brief brief brief brief brief brief brief brief brief brief"
-    "course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training"
+    "section section section section section section section section section section section section"
+    /* "brief brief brief brief brief brief brief brief brief brief brief brief"
+    "course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training course-training" */
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
@@ -153,6 +154,12 @@ header nav ul li:hover a::before {
   -o-transform: scaleX(1);
 }
 
+#section-div {
+  width: 100%;
+  height: auto;
+  grid-area: section;
+}
+
 /* BRIEF SECTION */
 .container .brief-section {
   grid-area: brief;
@@ -163,7 +170,7 @@ header nav ul li:hover a::before {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  top: 10vh;
+  /* top: 10vh; */
   color: rgb(255, 255, 255);
 }
 
