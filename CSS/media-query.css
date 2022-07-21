@@ -1,0 +1,110 @@
+@media screen and (max-width: 1000px) {
+  header nav ul {
+    position: fixed;
+    height: 90vh;
+    width: 100%;
+    top: 10vh;
+    left: -100%;
+    /*left: 0;
+    */
+    background-color: rgb(0, 0, 128);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  header nav #bar-icon {
+    display: block;
+  }
+
+  header nav #check-icon:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container .brief-section .brief-part {
+    margin: 20px;
+  }
+
+  .container .brief-section .brief-title h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+  }
+
+  .container .brief-section .brief-title span {
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+
+  .container .brief-section .brief-lifestyle {
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+
+  .container .brief-section .brief-skill table {
+    font-size: 1em;
+    /* border-collapse: separate; */
+    border-spacing: 0 15px;
+  }
+
+  .container .brief-section .brief-skill table thead tr th {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .container .brief-section .brief-skill table tbody tr:last-child td {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .container .brief-section .brief-education table {
+    font-size: 1.5em;
+    /* border-collapse: separate; */
+    border-spacing: 0 15px;
+  }
+
+  .container .brief-section .brief-education table .education-part {
+    font-size: 1em;
+  }
+
+  .container .brief-section .brief-education table tr:not(.education-part) {
+    font-size: 0.5em;
+  }
+
+  .container .brief-section .brief-experience .experience-part {
+    text-align: center;
+  }
+
+  .container .brief-section .brief-experience .experience-head {
+    font-size: 1.5em;
+    font-weight: 100;
+    width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .container .brief-section .brief-experience .experience-head span {
+    font-size: 1em;
+  }
+
+  .container .brief-section .brief-experience table,
+  .container .brief-section .brief-experience table caption {
+    font-size: 1em;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  * {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  * {
+    font-size: 10px;
+  }
+}
